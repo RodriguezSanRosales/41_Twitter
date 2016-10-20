@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>twitter</title>
+	 <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body onload="inic()">
+	<header>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h2>TODO APP</h2>
+			</div>
+		</div>		
+	</header>
+	<section class="mg">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<textarea class="form-control" rows="2" cols="20" placeholder="Añade tu nueva tarea" id="tarea_nueva"></textarea>
+				<button class="mg glyphicon glyphicon-plus-sign" onclick='introducir_tarea()'>Añadir tarea</button>
+			</div>
+		</div>			
+	</section>
+	<section class="mg">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<div id="vistaTareas" class="contTareas">
+					<!-- <input type="checkbox" name=""> -->
+				</div>	
+			</div>
+		</div>	
+	</section>
+	<script  type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
