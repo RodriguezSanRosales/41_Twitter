@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>twitter</title>
-	 <meta charset="utf-8">
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
@@ -19,15 +19,14 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<textarea class="form-control" rows="2" cols="20" placeholder="Añade tu nueva tarea" id="tarea_nueva"></textarea>
-				<button class="mg glyphicon glyphicon-plus-sign" onclick='introducir_tarea()'>Añadir tarea</button>
+				<button class="mg glyphicon glyphicon-plus-sign btnAgrega" onclick='introducir_tarea()'>Añadir tarea</button><!--boton con un evento para que al hacer click se añada la tarea-->
 			</div>
 		</div>			
 	</section>
 	<section class="mg">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<div id="vistaTareas" class="contTareas">
-					<!-- <input type="checkbox" name=""> -->
+				<div id="vistaTareas" class="contTareas"><!--aqui se agregara las tareas del usuario-->
 				</div>	
 			</div>
 		</div>	

@@ -10,9 +10,10 @@ textarea {
     width: 80%;
     
 }
-button{
-	padding: 1%;
+.btnAgrega{
+	padding: 2%;
 	border-radius: 12px;
+	background-color: #58D3F7;
 }
 .contTareas{
 	width: 100%;
@@ -26,6 +27,8 @@ button{
 
 p{
 	background-color: #E6E6E6;
-	margin-bottom: 2%;
-	padding: 2%;
+}
+
+.btnBorra{
+	float: right;
 }

@@ -1,5 +1,6 @@
 var tareas = [""]
 
+
 function inic(){
   vistaTareas = document.getElementById("vistaTareas");
   tarea_nueva = document.getElementById("tarea_nueva");
@@ -8,10 +9,11 @@ function inic(){
 
 function generar_vista(){
 	vistaTareas.innerHTML = "";
-	for (var i = 0; i < tareas.length; i++) {
-		vistaTareas.innerHTML +=  + "<p>" + tareas[i]
-		+ "<button onclick='borrar(" + i + ")'>Borrar</button></p>";
+	for (var i = 1; i < tareas.length; i++) {
+		vistaTareas.innerHTML += "<input type='checkbox' onclick='tachar()'" + "<p>" + tareas[i]
+		+ "<button class='glyphicon glyphicon-trash btnBorra' onclick='borrar(" + i + ")'></button></p>";
 	}
+
 } 
 
 function introducir_tarea(){
@@ -22,4 +24,14 @@ function introducir_tarea(){
 function borrar(i){
   tareas.splice(i,1) ;
   generar_vista();
+}
+
+function tachar(){
+	console.log(this);
+
+	if (this.checked) {
+		this.nextSibiling.style.textDecoration="line-through";
+	}else{
+		this.nextSibiling.style.textDecoration="none";
+	}
 }
