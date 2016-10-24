@@ -10,8 +10,8 @@ function inic(){
 function generar_vista(){
 	vistaTareas.innerHTML = "";
 	for (var i = 1; i < tareas.length; i++) {
-		vistaTareas.innerHTML += "<input type='checkbox' onclick='tachar()'" + "<p>" + tareas[i]
-		+ "<button class='glyphicon glyphicon-trash btnBorra' onclick='borrar(" + i + ")'></button></p>";
+		vistaTareas.innerHTML += "<input type='checkbox' onclick='tachar()'" 
+		+ "<p>" + tareas[i] + "<button class='glyphicon glyphicon-trash btnBorra' onclick='borrar(" + i + ")'></button></p>";
 	}
 
 } 
@@ -26,12 +26,14 @@ function borrar(i){
   generar_vista();
 }
 
-function tachar(){
-	console.log(this);
 
+
+//Revisar esta funcion !! porfavor sandra del futuro. 
+//tienes que poder tachar las tareas 
+/*function tachar(){
 	if (this.checked) {
 		this.nextSibiling.style.textDecoration="line-through";
 	}else{
 		this.nextSibiling.style.textDecoration="none";
 	}
-}
+}*/
