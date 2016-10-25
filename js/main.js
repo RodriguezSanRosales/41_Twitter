@@ -30,6 +30,7 @@ function borrar(i){
 
 //Revisar esta funcion !! porfavor sandra del futuro. 
 //tienes que poder tachar las tareas 
+
 /*function tachar(){
 	if (this.checked) {
 		this.nextSibiling.style.textDecoration="line-through";
